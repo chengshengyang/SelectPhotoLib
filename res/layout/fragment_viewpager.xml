@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager_framelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.github.selectphoto.ui.ViewPagerFixed
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/DefaultActionbarHeightPort"
+        tools:ignore="MissingRegistered" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DefaultActionbarHeightPort"
+        android:layout_gravity="bottom"
+        android:background="@color/textblack"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/original_image_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/checkbox_original"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:gravity="right" >
+
+                <FrameLayout
+                    android:id="@+id/send_image_framelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right" >
+
+                    <Button
+                        android:id="@+id/send_image_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="50dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/black"
+                        android:gravity="center"
+                        android:text="@string/button_ok"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

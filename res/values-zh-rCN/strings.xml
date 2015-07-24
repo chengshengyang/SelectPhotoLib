@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="album_count">%1$d张</string>
+    <string name="album_title">图片</string>
+    <string name="button_send">发送</string>
+    <string name="button_ok">确定</string>
+    <string name="button_preview">预览</string>
+    <string name="checkbox_original">原图</string>
+    <string name="checkbox_original_size">原图(%1$s)</string>
+    <string name="toast_max_count">最多选择%1$d张图片</string>
+    
+    <string name="action_menu_select">选择</string>
+</resources>

@@ -1,0 +1,213 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="CustomListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+    </style>
+    
+    <style name="BigWhiteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textwhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BigBlackText" parent="@style/BigWhiteText">
+        <item name="android:textColor">@color/textblack</item>
+    </style>
+
+    <style name="MiddleWhiteText" parent="@style/BigWhiteText">
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="MiddleBlackText" parent="@style/MiddleWhiteText">
+        <item name="android:textColor">@color/textblack</item>
+    </style>
+<!-- 
+    <style name="EmipianTheme.Holo" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/window_bg_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:progressBarStyleHorizontal">@null</item>
+        <item name="android:windowAnimationStyle">@style/EmipianAnimation.Activity.Holo</item>
+        <item name="android:listViewStyle">@null</item>
+        <item name="actionBarStyle">@style/EmipianActionBar.Solid</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_menu_selector</item>
+        <item name="homeAsUpIndicator">@drawable/actionbar_ic_back</item>
+    </style>
+
+    <style name="EmipianAnimation.Activity.Holo" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/pop_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_not_change</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_not_change</item>
+        <item name="android:activityCloseExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="EmipianActionBar.Solid" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:icon">@null</item>
+        <item name="android:background">@color/action_bar_color</item>
+        <item name="titleTextStyle">@style/EmipianActionBar.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/EmipianActionBar.SubTitleTextStyle</item>
+        <item name="background">@color/action_bar_color</item>
+        <item name="backgroundStacked">@color/action_bar_color</item>
+        <item name="backgroundSplit">@color/action_bar_color</item>
+        <item name="indeterminateProgressStyle">@style/ActionBarCustomProgressBar</item>
+    </style>
+
+    <style name="ActionBarCustomProgressBar" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_actionbar_holo</item>
+    </style>
+
+    <style name="EmipianActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/ActionBarTextSize</item>
+        <item name="android:textColor">@color/action_bar_tittle_color</item>
+    </style>
+
+    <style name="EmipianActionBar.SubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/HintTextSize</item>
+        <item name="android:textColor">@color/hint_text_color</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal" />
+
+    <style name="bigWhiteText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textwhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="bigBlackText" parent="@style/bigWhiteText">
+        <item name="android:textColor">@color/textblack</item>
+    </style>
+
+    <style name="middleWhiteText" parent="@style/bigWhiteText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="middleBlackText" parent="@style/middleWhiteText">
+        <item name="android:textColor">@color/textblack</item>
+    </style>
+
+    <style name="smallBlackText" parent="@style/middleBlackText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="smallWhiteText" parent="@style/middleBlackText">
+        <item name="android:textColor">@color/textwhite</item>
+    </style>
+
+    <style name="HeaderImageView_M">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="HeaderImageView_W" parent="@style/HeaderImageView_M">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CustomListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@drawable/divider</item>
+        <item name="android:dividerHeight">1.5dp</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+    </style>
+
+    <style name="TabItem_Layout">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">100dp</item>
+        <item name="android:minHeight">50dp</item>
+    </style>
+
+    <style name="TabItem_Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="ShadowedText">
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="My_Theme_Dialog_Alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        边框
+        <item name="android:windowIsFloating">true</item>
+        是否浮现在activity之上
+        <item name="android:windowBackground">@android:color/transparent</item>
+        背景透明
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        模糊
+    </style>
+
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style>
+
+    <style name="middleText" parent="@style/bigWhiteText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HeaderImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="sendMiPianResultAccountTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:autoLink">all</item>
+    </style>
+
+    <style name="chgText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/codechg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+ -->
+</resources>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/photo_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeLayout2"
+        android:gravity="center"
+        android:horizontalSpacing="4dip"
+        android:layout_margin="3dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dip" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DefaultActionbarHeightPort"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/textblack" >
+
+        <Button
+            android:id="@+id/preview_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="@string/button_preview"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/send_grid_image_framelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="5dp" >
+
+            <Button
+                android:id="@+id/send_image_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/button_ok"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
