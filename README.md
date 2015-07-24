@@ -11,10 +11,7 @@ Select photo from local file system for Android
 
 支持单选和多选
 
-![image](https://github.com/chengshengyang/Images/blob/master/20150724183530.png)
-
-![image](https://github.com/chengshengyang/Images/blob/master/20150724183618.png)
+![image](https://github.com/chengshengyang/Images/blob/master/20150724183530.png) ![image](https://github.com/chengshengyang/Images/blob/master/20150724183618.png)
 
 ![image](https://github.com/chengshengyang/Images/blob/master/20150724183657.png)
-
 ![image](https://github.com/chengshengyang/Images/blob/master/20150724183634.png)
