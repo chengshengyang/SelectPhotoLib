@@ -25,4 +25,5 @@ public class Constants {
 	// test git
 	public static final int TEST_VALUE 						= 0x11;
 	public static final int TEST_VALUE_2 					= 0x12;
+	public static final int TEST_VALUE_3 					= 0x13;
 }
