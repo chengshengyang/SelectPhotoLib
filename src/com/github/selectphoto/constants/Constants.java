@@ -22,5 +22,6 @@ public class Constants {
 	
 	public static final int TAG_MENU_SELECT 				= 10;
 	
-	
+	// test git
+	public static final int TEST_VALUE 						= 0x11;
 }
